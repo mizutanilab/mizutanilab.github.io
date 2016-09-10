@@ -1,0 +1,37 @@
+BODY {
+	FONT-WEIGHT: normal; BACKGROUND: white; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Trebuchet MS,sans-serif; TEXT-DECORATION: none
+}
+.hosting {
+	FONT-SIZE: 90%; FLOAT: right
+}
+.headline {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; COLOR: #339999
+}
+.hr {
+	MARGIN-TOP: 2px; BORDER-LEFT-COLOR: black; BORDER-TOP-COLOR: black; BORDER-BOTTOM: black 2px solid; BORDER-RIGHT-COLOR: black
+}
+.news {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 220px; PADDING-TOP: 0px
+}
+.news_item {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; MARGIN: 0px; PADDING-TOP: 15px
+}
+.main {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 90%; PADDING-BOTTOM: 3px; MARGIN: 30px 0px 0px 140px; PADDING-TOP: 3px
+}
+.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; LEFT: 10px; PADDING-BOTTOM: 0px; WIDTH: 120px; LINE-HEIGHT: 17px; 
+	PADDING-TOP: 0px; POSITION: absolute; TOP: 110px; voice-family: inherit
+}
+UNKNOWN {
+	WIDTH: 180px
+}
+.interest_item {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 30px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.cv_item {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 30px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.cv_subitem {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 50px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+ <TITLE>MCTrace</TITLE>
+ <LINK title="Mizutani Style sheet" href="style.css" type=text/css rel=stylesheet>
+ <META http-equiv="refresh" content="5;URL=https://sites.google.com/site/mizutanilab1/software-recview">
+ <META content="MCTrace" name=keywords>
+ <META content="Neuronal model building program with a graphical user interface" name=description>
+ <META content="MSHTML 6.00.2900.2604" name=GENERATOR>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80845358-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</HEAD>
+
+<BODY>
+<A name=mctrace></A>
+<H2>MCTrace: this page has been moved to <A href="https://sites.google.com/site/mizutanilab1/software-recview">Google sites</A>.</H2>
+<DIV class=headline>A GUI program for neuronal model building</DIV>
+
+<P class=hr></P>
+
+<DIV class=hosting>
+<P>
+<A href="https://github.com/mizutanilab/MCTrace">Mirror at GitHub</A>
+</P>
+</DIV>
+
+<DIV class=menu><B style="FONT-SIZE: 17px">Index</B> 
+<P>
+<A href="#outline">Outline</A><BR>
+<A href="#license">License</A><BR>
+<A href="#download">Download</A><BR>
+<A href="#notes">Release notes</A><BR>
+<A href="#howto">How to use</A><BR>
+<A href="#faq">FAQ</A><BR>
+<A href="#contact">Contact</A><BR>
+<BR>
+
+<P class=hr></P>
+</DIV>
+
+<DIV class=main>
+<H3><A name=outline></A>Outline</H3>
+MCTrace is a program for neuronal model building with a graphical user interface. It consists of over 50,000 lines of custom source code in C++.<BR>
+
+<DIV class=interest_item>
+<P>
+<IMG width=200 height=160 alt=ScreenShot1 src="rfview1.jpg" align=left>
+Neuronal circuits, which are essential for brain functions, are built up by neurons as a 3D network, so tracing the 3D neuronal network of brain is the first step to understanding the mechanism of brain functions. We demonstrated that a skeletonized model of neuronal processes can be built by tracing the 3D coefficient map. An example of the obtained network model of human brain tissue using MCtrace is shown left. In this process, the 3D image was converted into 3D Cartesian coordinates by model building. The 3D coordinates are easier to handle than the image itself, making it possible to analyze brain network.
+<BR clear=left><BR>
+</DIV>
+</P>
+
+
+<DIV class=interest_item>
+</DIV>
+
+<H3><A name=license></A>License</H3>
+MCTrace viewer is provided free of charge under the <a href="alicense.htm">BSD 2-Clause License</a>.
+
+<H3>References</H3>
+<UL>
+<LI>R. Mizutani, R. Saiga, A. Takeuchi, K. Uesugi and Y. Suzuki (2013). Three-dimensional network of <i>Drosophila</i> brain hemisphere. 
+<I>J. Struct. Biol.</I> <B>184(2)</B>, 271-279.
+<a href="http://dx.doi.org/10.1016/j.jsb.2013.08.012">DOI</a>
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/24012710">PubMed</A>
+
+<LI>R. Mizutani, A. Takeuchi, K. Uesugi, S. Takekoshi, N. Nakamura and Y. Suzuki (2011). Building human brain network in 3D coefficient map determined by X-ray microtomography. <I>AIP Conference Proceedings</I> <B>1365</B>, 403-406.
+<a href="http://link.aip.org/link/?APCPCS/1365/403/1">Abstract and full-text pdf</A>
+<a href="http://www.el.u-tokai.ac.jp/ryuta/AIPConfProc1365(1)403-6(2011).pdf">preprint</A> (right-click to download)
+</LI>
+
+<LI>R. Mizutani and Y. Suzuki (2012). X-ray Microtomography in biology. <I>Micron</I> <B>43(2-3)</B>, 104-115. Review. 
+<a href="http://dx.doi.org/10.1016/j.micron.2011.10.002">DOI</A>
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/22036251">PubMed</A>
+<a href="http://www.el.u-tokai.ac.jp/ryuta/Micron43(2-3)104-115(2012)preprint.pdf">preprint</A>
+</LI>
+</UL>
+
+<H3><A name=download></A>Download</H3>
+<P>The latest MCTrace release is v3.4.0, currently available from 
+<A href="https://github.com/mizutanilab/MCTrace">our GitHub site</A>. The binary folder of GitHub contains 'MCTrace.exe' for x86 and x64 platforms along with a parameter file 'paramstd.txt'. Please use the MCTrace executable appropriate for your PC platform. The parameter file should be placed in the folder where MCTrace.exe was extracted. Further updates will be released since this program is still under development. Source codes are not available at present.</P>
+
+<H3><A name=notes></A>Release notes</H3><B>The latest release is v3.4.0</B> 
+<P>
+<UL>
+  <LI>v3.4.0 (built 1 Apr 2016). Many functions including those for the left-hand mouse were implemented.
+  <LI>v3.2.8 (built 27 May 2013). x64 platform is now supported. Functions for crystallographic analysis were disabled and not supported from this release.
+  <LI>v2.2.1 (relesed 6 Dec 2010). Graphics are accelerated with DirectX libraries. Functions for microtomographic analysis were thoroughly updated. 
+  <LI>v2.0.2 (released 9 Jun 2009). Functions for tomographic analysis were implemented. 
+  <LI>v1.0.2 (released 9 Jan 2007). Cut, copy and paste functions were debugged. 
+Refinement dialog was updated. Users now can specify regions to be refined.
+  <LI>v1.0.1 (released 12 Dec 2006). Cut, copy and paste functions were implemented. 
+Exponential subroutine was replaced with a custom one. This makes 
+the structure factor calculation over three times faster than before. 
+  <LI>v1.0.0 is released (12 Nov 2006).
+</LI></UL>
+</P>
+
+<H3><A name=howto></A>How to use</H3>
+We believe that this program is self-explanatory, but the following tips should be helpful.
+<BR><BR>
+<DIV class=interest_item>
+<B>Installation</B><BR>
+Download the MCTrace compressed file. Extract the executable and parameter files in any folder you like. 
+<BR><BR><B>Execution</B><BR>
+Double click the 'MCTrace' executable.
+<BR><BR><B>Open model</B><BR>
+From the menu bar, select 'File'-'Open' and choose a coordinate file. Click the 'OK' button. 
+Double-click a node to highlight it and select 'Focus' from the right click menu. The highlighted node is brought to the center of the window with this procedure. You can focus on any particular part of the model by selecting 'View'-'Focus'. If you have no model coordinate, 'File'-'New' generates a new model.
+<BR><BR><B>Three-dimensional coefficient map</B><BR>
+(Skip this step if you don't have map files.) Select 'Tomography'-'Load slices' to load tomographic slices in TIFF format. After the map files were loaded, open the map dialog from the 'Tomography'-'Coeff map' menu,
+select 'Generate new map', and enter parameters of 'CT mesh' and 'Display' region. Recommended values are '1' for the CT mesh and '20 x 20 x 20' for the display region. Enable one of map 'Contours' and set an approriate contour level in map 'sigma'. A recommended value of the contour level is '3'. 'Apply' invokes map update.
+<BR><BR><B>Modify model</B><BR>
+First, double click the model to be modified, deleted, or otherwise manipulated. 
+Select 'Edit'-'Delete' to delete part of the model or 'Move' to rotate or translate. The double-clicked node can be moved by dragging.
+<BR><BR><B>Statistical analysis</B><BR>
+The 'Analyze' menu provides several analysis tools.
+<BR><BR><B>Refinement</B><BR>
+(Optional) Open the 'Tomography'-'Refine' dialog. Enter appropriate parameters for dynamics and/or minimization calculation. 'Start' executes refinement. Models under refinement are dynamically displayed and can be manipulated.
+</DIV>
+
+<H3><A name=faq></A>Frequently asked questions</H3>
+<OL>
+  <LI>System requirements.</LI>
+    <DIV class=cv_item>
+    MCTrace runs on most of Windows laptop and desktop PCs.
+    </DIV></P>
+  <LI>Are any manuals available?</LI>
+    <DIV class=cv_item>
+    A brief how-to-use guide has been published as the appendix of the following paper:<BR><BR>
+R. Mizutani, A. Takeuchi, K. Uesugi, S. Takekoshi, R.Y. Osamura and Y. Suzuki (2009). Three-dimensional microstructural analysis of human brain tissue by using synchrotron radiation microtomographs. In <I>Handbook on White Matter</I>, eds. Westland, T.B. & Calton, R.N., New York, Nova Science Publishers, pp. 247-277.
+<A href="http://www.el.u-tokai.ac.jp/ryuta/WhiteMatterChap14Mizutani.pdf">pdf</A> (9.5 MB)
+    </DIV></P>
+</OL>
+
+<H3><A name=contact></A>Contact / bug report</H3>
+<DIV class=cv_item>
+Ryuta Mizutani, Dr.<BR>
+Department of Applied Biochemistry<BR>
+School of Engineering, Tokai University<BR>
+Kitakaname 4-1-1, Hiratsuka, Kanagawa 259-1292, Japan<BR>
+E-mail ryuta(at)tokai-u.jp<BR>
+http://www.el.u-tokai.ac.jp/ryuta/<BR>
+<A href="http://www.linkedin.com/pub/ryuta-mizutani/79/832/115">Linkedin</A> 
+<A href="http://www.facebook.com/people/Ryuta-Mizutani/100005433369640">Facebook</A><BR>
+<BR>
+</DIV>
+
+</DIV><P class=hr></P>
+
+<P>
+Our lab pages at <A href="http://www.youtube.com/user/mizutaniLab">YouTube</A> / 
+<A href="https://github.com/mizutanilab/">GitHub</A> / 
+<A href="https://sites.google.com/site/mizutanilab1/">Google sites</A><BR>
+<A href="#outline">MCTrace</A> - 
+<A href="http://www.el.u-tokai.ac.jp/ryuta/">Mizutani Lab</A> - 
+<A href="http://www.el.u-tokai.ac.jp/english/index.html">Dept of Applied Biochemistry</A> - 
+<A href="http://www.tec.u-tokai.ac.jp/en/">Sch of Engineering</A> -  
+<A href="http://www.u-tokai.ac.jp/english/index.html">Tokai Univ</A>
+</P>
+
+</BODY></HTML>
