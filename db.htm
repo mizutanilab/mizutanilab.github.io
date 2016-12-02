@@ -27,19 +27,6 @@
 
 <P class=hr></P>
 
-<DIV class=menu><B style="FONT-SIZE: 17px">Index</B> 
-<P>
-<A href="#mouse">Mouse</A><BR>
-<A href="#drosophila">Drosophila</A><BR>
-<A href="#human">Human</A><BR>
-<A href="#fishfly">Fish/Fly</A><BR>
-<A href="#howto">How to use</A><BR>
-<BR>
-
-<P class=hr></P>
-</DIV>
-
-<DIV class=main>
 
 <H3>Movies and 3D coordinate files</H3>
 
@@ -55,7 +42,10 @@
   <P><IMG width=240 height=100 alt=snapshot src="141226M331PQmov01a.png">   
   <LI>Reference<BR>
   R. Mizutani, R. Saiga, M. Ohtsuka, H. Miura, M. Hoshino, A. Takeuchi and K. Uesugi (2016). Three-dimensional X-ray visualization of axonal tracts in mouse brain hemisphere. 
-<I>Sci. Rep.</I> in press.
+<I>Sci. Rep.</I> <B>6</B>, 35061.
+ <A href="http://doi.org/10.1038/srep35061">DOI</A> 
+<A href="http://www.nature.com/articles/srep35061.pdf">pdf</A> 
+ <A href="https://arxiv.org/abs/1610.00234">arXiv</A> 
 </UL>
 
 <A name=drosophila></A>
@@ -119,7 +109,6 @@
 </DIV>
 <BR>
 
-</DIV>
 <P class=hr></P>
 <A name=howto></A>
 <H3>How to use</H3>
@@ -134,14 +123,17 @@ We recommend using the PC software 'MCTrace' for viewing the wire models of tiss
 <DIV class=interest_item>
 All files are plain text files. Most of the lines are based on the PDB format, a well-known format for describing three-dimensional models of macromolecules. Therefore, PDB viewers can be used to display the model coordinates. However, the 'REMARK RM' lines for display control can be recognized only by MCTrace.
 </DIV>
+
 <BR><BR><B>Three-dimensional coordinates</B><BR>
 <DIV class=interest_item>
 The first half of the file lines are HETATM entries. Each HETATM entry correspond to a 'node' of a wire model. The wire model is displayed by connecting these nodes. An HETATM entry consists of HETATM header, entry number, node identifier, constituent type, constituent identifier, xyz coordinates (in micrometers), density, and radius. The entry name HETATM is derived from 'hetero atom' of the original PDB format.  
 </DIV>
+
 <BR><BR><B>Connection lines</B><BR>
 <DIV class=interest_item>
 In the last half of the file, CONECT entries describe connections between node entries. Some PDB viewers including the program MCTrace can recognize the CONECT entries and display connections.
 </DIV>
+
 <BR><BR><B>Constituent types</B><BR>
 <DIV class=interest_item>
 The three-dimensional tissue structure has many types of constituents. The constituent types of the human brain structure are: PYR, pyramidal neuron; STE, stellate neuron; ASY, aspiny stellate neuron; NEU, neuron; GLI, glial cell; UND, orphan neurites; CEL, uncategorized cell; and VES, blood vessels. The constituent type of other structures represents group names, which are determined on the basis of the three-dimensional structure.
@@ -154,7 +146,7 @@ The three-dimensional tissue structure has many types of constituents. The const
   Therefore, each 3D data consists of thousands of 8-bit TIFF files. They are too large for internet transfer, so they have to be placed in DVD-ROM. Please email ryuta(at)tokai-u.jp to request the DVD. They are provided at cost.<BR></DIV>
 
 <BR>
-</DIV><P class=hr></P>
+<P class=hr></P>
 
 <P>
 <A href="index.htm">Home</a> - 
