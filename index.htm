@@ -37,7 +37,8 @@
 <A href="index.htm">Home</A> - 
 <A href="db.htm">Movies/3D models</A> - 
 <A href="publist.htm">Publications</A> - 
-<A href="https://github.com/mizutanilab/">GitHub repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/">GitHub repos</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/biomimetic-nn">biomimetic AI</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="https://github.com/mizutanilab/MCTrace">MCTrace</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="https://github.com/mizutanilab/RecView">RecView</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="patterns.htm">3D test patterns</A> - 
@@ -62,7 +63,14 @@ It's featured in the
 <a href="https://www.aps.anl.gov/APS-Science-Highlight/2021-01-18/uncovering-new-insights-about-the-brains-of-individuals-with">APS highlights</a> 
 and ranked <a href="https://nature.altmetric.com/details/99897157#score">top 5 percentile with Altmetrics</a>. 
 YouTube: <a href="https://youtu.be/hqovtNZP7Gs">3D image</A> - <a href="https://youtu.be/oTwDlgnMX4Q">Network</A>.
-We also found that brain capillary structures correlate with neuron structures: <a href="https://doi.org/10.1038/s41598-021-91233-z">DOI</a> <a href="https://youtu.be/UhbeT7Cj63A">YouTube</a><BR>
+We also found that brain capillary structures correlate with neuron structures: <a href="https://doi.org/10.1038/s41598-021-91233-z">DOI</a> <a href="https://youtu.be/UhbeT7Cj63A">YouTube</a>
+<BR clear=left></P>
+
+<P><IMG width=155 height=171 alt=mouseAI src="mouseAI.png" align=left>
+Then we implemented the findings from the synchrotron radiation study on brain tissues into the artificial neural network including generative AIs. The analysis of brain tissues of human and mouse indicated that mouse neuronal somata are smaller and neurites are thinner than those of human neurons. We incorporated those characteristics of mouse neurons in convolutional layers of a generative adversarial network (GAN) and a denoising diffusion implicit model (DDIM), which were then subjected to image generation tasks using photo datasets of cat faces, cheese, human faces, and birds. The mouse-mimetic GAN outperformed a standard GAN in the image generation task using the cat faces and cheese photo datasets, but underperformed for human faces and birds. The mouse-mimetic DDIM gave similar results, suggesting that the nature of the datasets affected the results. Analyses of the used datasets indicated differences in their image entropy, which should influence the number of parameters required for image generation. The preferences of the mouse-mimetic AIs coincided with the impressions commonly associated with mice. The relationship between the neuronal network and brain function should be investigated by implementing other biological findings in artificial neural networks. 
+ <a href="https://doi.org/10.1038/s41598-025-10912-3">DOI</a>
+ <A href="https://arxiv.org/abs/2410.20735">arXiv</A>
+ <A href="https://github.com/mizutanilab/biomimetic-nn">github repo</A>
 <BR clear=left></P>
 
 <P><IMG width=155 height=124 alt=FlyBrain src="flyBrain01.png" align=left>
@@ -70,9 +78,8 @@ We have also reported a three-dimensional analysis of the brain network of the f
 <a href="http://dx.doi.org/10.1016/j.jsb.2013.08.012">DOI</a> 
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24012710">PubMed</A> 
 <a href="http://arxiv.org/abs/1609.02261">arXiv</A> 
-<a href="https://www.youtube.com/user/mizutaniLab">YouTube</A><BR>
+<a href="https://www.youtube.com/user/mizutaniLab">YouTube</A>
 <BR clear=left></P>
-
 
 <P><IMG width=150 height=146 alt=TestPattern src="JMicroscFig5g.png" align=left>
 Spatial resolution is the fundamental parameter in structural sciences. We developed a method for estimating the spatial resolution of real images from a logarithmic intensity plot in the Fourier domain. The logarithmic intensity plots of test images indicated that the full width at half maximum of a Gaussian point spread function can be estimated from the images themselves. The spatial resolution of imaging X-ray nanotomography using Fresnel zone-plate optics was estimated with this method. A cross section of a test object visualized with the nano-CT indicated that square-wave patterns up to 120-nm pitch were resolved. The logarithmic intensity plot was calculated from a nano-CT cross section of brain tissue. The full width at half maximum of the point spread function estimated from the plot coincided with the resolution determined from the test object. These results indicated that the logarithmic intensity plot in the Fourier domain provides an alternative measure of the spatial resolution without explicitly defining a noise criterion.
@@ -85,21 +92,20 @@ Spatial resolution is the fundamental parameter in structural sciences. We devel
 <BR>
 
 Recently, our interests have been focused on 
-(1) three-dimensional structural analysis of biological soft tissues, including brain tissues of schizophrenia cases (<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">original paper</a>), and (2) evaluation of the spatial resolution of real sample images.<BR><BR>
+(1) three-dimensional structural analysis of biological soft tissues, including brain tissues of schizophrenia cases (<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">original paper</a>), and (2) its <a href="https://doi.org/10.1038/s41598-025-10912-3">implementation in AI</a>.<BR><BR>
 
 <H3><A name=publications></A>Publications</H3>
 Selected publications are: 
 <OL>
-<LI>Ryuta Mizutani, Rino Saiga, Yoshiro Yamamoto, Masayuki Uesugi, Akihisa Takeuchi, Kentaro Uesugi, Yasuko Terada, Yoshio Suzuki, Vincent De Andrade, Francesco De Carlo, Susumu Takekoshi, Chie Inomoto, Naoya Nakamura, Youta Torii, Itaru Kushima, Shuji Iritani, Norio Ozaki, Kenichi Oshima, Masanari Itokawa, and Makoto Arai (2021). Structural diverseness of neurons between brain areas and between cases. <I>Transl. Psychiatry</I> <B>11</B>, 49. 
+<LI>Rino Saiga et al. (2025). Structural differences between human and mouse neurons and their implementation in generative AIs. <I>Sci. Rep.</I> <B>15</B>, 25091.
+ <a href="https://doi.org/10.1038/s41598-025-10912-3">DOI</a>
+ <A href="https://arxiv.org/abs/2410.20735">arXiv</A>
+
+<LI>Ryuta Mizutani et al. (2021). Structural diverseness of neurons between brain areas and between cases. <I>Transl. Psychiatry</I> <B>11</B>, 49. 
  <a href="https://doi.org/10.1038/s41398-020-01173-x">DOI</a>
  <a href="https://www.nature.com/articles/s41398-020-01173-x.pdf">pdf</a>
 
-<LI>Rino Saiga, Masato Hoshino, Akihisa Takeuchi, Kentaro Uesugi, Katsuko Naitou, Akemi Kamijo, Noboru Kawabe, Masato Ohtsuka, Shunya Takizawa, and <u>Ryuta Mizutani</u> (2019). Synchrotron radiation microtomography of brain hemisphere and spinal cord of a mouse model of multiple sclerosis revealed a correlation between capillary dilation and clinical score. <I>J. Comp. Neurol.</I> <B>527(13)</B>, 2091-2100. [invited]
- <a href="https://dx.doi.org/10.1002/cne.24544">DOI</a>
- <A href="https://arxiv.org/abs/1810.01019">arXiv</A>
- <a href="https://www.ncbi.nlm.nih.gov/pubmed/30291810">PubMed</A>
-
-<LI>*<U>Ryuta Mizutani</U>, Rino Saiga, Susumu Takekoshi, Chie Inomoto, Naoya Nakamura, Masanari Itokawa, Makoto Arai, Kenichi Oshima, Akihisa Takeuchi, Kentaro Uesugi, Yasuko Terada and Yoshio Suzuki (2016). A method for estimating spatial resolution of real image in the Fourier domain. <I>J. Microscopy</I>  <B>261(1)</B>, 57-66.
+<LI>Ryuta Mizutani et al. (2016). A method for estimating spatial resolution of real image in the Fourier domain. <I>J. Microscopy</I>  <B>261(1)</B>, 57-66.
 <a href="http://dx.doi.org/10.1111/jmi.12315">DOI</a>
 <A href="https://arxiv.org/abs/1609.02268">arXiv</A>
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/26444300">PubMed</A>
@@ -122,6 +128,10 @@ Selected publications are:
   <DIV class=cv_subitem>
     Reconstruction and image processing of micro-CT and nano-CT data taken at SPring-8 and APS Argonne. On-the-fly CT reconstruction is implemented using CUDA and SIMD assembly code up to AVX-512.
   </DIV></P>
+<P><A href="https://github.com/mizutanilab/biomimetic-nn">Biomimetic layers of AI</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
+  <DIV class=cv_subitem>
+    Neural network layers inspired from our study on brain tissues of human and mouse: <A href="https://github.com/mizutanilab/biomimetic-nn">github repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> <a href="https://doi.org/10.1038/s41598-025-10912-3">paper DOI</a><IMG width=9 height=9 alt=jump src="link.png" align=top>
+  </DIV></P>
 <P><A href="https://www.nature.com/protocolexchange/protocols/6905">Preparation of soft tissue samples</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
   <DIV class=cv_subitem>
     Sample preparation tips for synchrotron radiation experiments.<BR>
@@ -130,10 +140,6 @@ Selected publications are:
 <P><A href="patterns.htm">Test patterns for microtomography and nanotomography</A><BR>
   <DIV class=cv_subitem>
     Test patterns for the estimation of spatial resolution of 3D images.
-  </DIV></P>
-<P><A href="https://github.com/mizutanilab/biomimetic-nn">Mouse-mimetic layers</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
-  <DIV class=cv_subitem>
-    Neural network layers inspired from our study on brain tissues of human and mice: <a href="https://arxiv.org/abs/2410.20735">arXiv</a><IMG width=9 height=9 alt=jump src="link.png" align=top>
   </DIV></P>
 </DIV>
 
@@ -155,7 +161,8 @@ Mizutani attaching a sample on the rotation stage of the 32-ID beamline of APS, 
     1993-1995 Research fellow, the Japan Society for the Promotion of Science<BR> 
     1995-2006 Assistant Professor, the University of Tokyo<BR> 
     2006-2012 Associate Professor, Tokai University<BR> 
-    2012- Professor, Tokai University<BR> 
+    2012- Professor, Tokai University<BR>
+    2023- Visiting Researcher, SPring-8 Center, RIKEN<BR>
   </DIV></P>
 <P>Membership:<BR>
   <DIV class=cv_subitem>
@@ -190,7 +197,8 @@ https://mizutanilab.github.io/<BR>
 <A href="publist.htm">publication</A> - 
 <A href="db.htm">movies/models</A> - 
 <A href="patterns.htm">test patterns</A><BR><BR>
-<A href="https://github.com/mizutanilab/">GitHub repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/">GitHub repos</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/biomimetic-nn">biomimetic AI</A> - 
 <A href="https://mizutanilab.github.io/RecView/">RecView</A> - 
 <A href="https://mizutanilab.github.io/MCTrace/">MCTrace</A> - 
 <A href="https://mizutanilab.github.io/BluetoothDials/">Bluetooth dialbox</A>

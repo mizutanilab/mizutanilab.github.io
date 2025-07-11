@@ -39,6 +39,7 @@
 <A href="db.htm">3D動画・構造モデル</A> - 
 <A href="publist.htm">論文</A> - 
 <A href="https://github.com/mizutanilab/">GitHub repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/biomimetic-nn">生物模倣AI</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="https://github.com/mizutanilab/MCTrace">MCTrace</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="https://github.com/mizutanilab/RecView">RecView</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
 <A href="patterns.htm">3Dテストパターン</A> - 
@@ -65,7 +66,14 @@
 <a href="https://dx.doi.org/10.1038/s41398-019-0427-4">2021</a> 
 Altmetrics指標により全論文中上位5%にランクされています：<a href="https://nature.altmetric.com/details/99897157#score">Altmetrics</a>。
 YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https://youtu.be/oTwDlgnMX4Q">ネットワーク</A>。
-血管と神経細胞に構造の関係性があることもわかりました。<a href="https://doi.org/10.1038/s41598-021-91233-z">DOI</a> <a href="https://youtu.be/UhbeT7Cj63A">YouTube</a><BR>
+血管と神経細胞に構造の関係性があることもわかりました。<a href="https://doi.org/10.1038/s41598-021-91233-z">DOI</a> <a href="https://youtu.be/UhbeT7Cj63A">YouTube</a>
+<BR clear=left></P>
+
+<P><IMG width=155 height=171 alt=mouseAI src="mouseAI.png" align=left>
+脳組織の放射光研究から得られた知見を、生成AIを含む人工ニューラルネットワークに実装する研究も進めています。ヒトとマウスの脳組織を解析では、マウスの神経細胞はヒトに比べて細胞体が小さく、神経突起が細いことが明らかになりました。このマウスニューロンの特徴を、敵対的生成ネットワーク（GAN）と拡散モデル（DDIM）に組み込み、猫の顔、チーズ、ヒトの顔、鳥の写真データセットを用いて、フェイク画像を生成させました（左画像）。マウスを模倣したGANは、猫の顔とチーズの写真生成では通常のGANを上回る性能を示す一方で、人間の顔と鳥の写真生成では通常より劣る性能でした。マウス模倣DDIMも同様の結果を示し、データセットの性質による影響が考えられました。そこで、使用したデータセットの統計的性質を検討したところ、データセット間で画像エントロピーが異なることが判明し、これにより画像生成に必要なパラメータ数が変化したものと思われます。マウスを模倣したAIの性向は、一般的にマウスから連想される印象と一致します。ほかにも様々な生物学的知見をAIに実装して、神経ネットワークと脳機能の関係を調べる必要があると考えられます。
+ <a href="https://doi.org/10.1038/s41598-025-10912-3">DOI</a>
+ <A href="https://arxiv.org/abs/2410.20735">arXiv</A>
+ <A href="https://github.com/mizutanilab/biomimetic-nn">github repo</A>
 <BR clear=left></P>
 
 <P><IMG width=155 height=124 alt=FlyBrain src="flyBrain01.png" align=left>
@@ -73,7 +81,7 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
 <a href="http://dx.doi.org/10.1016/j.jsb.2013.08.012">DOI</a> 
 <a href="http://www.ncbi.nlm.nih.gov/pubmed/24012710">PubMed</A> 
 <a href="http://arxiv.org/abs/1609.02261">arXiv</A> 
-<a href="https://www.youtube.com/user/mizutaniLab">YouTube</A><BR>
+<a href="https://www.youtube.com/user/mizutaniLab">YouTube</A>
 <BR clear=left></P>
 
 <P><IMG width=150 height=146 alt=TestPattern src="JMicroscFig5g.png" align=left>
@@ -84,20 +92,17 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
 <BR clear=left></P>
 
 </DIV>
-<BR>
-
 
 <H3><A name=publications></A>論文発表</H3>
-統合失調症例のヒト脳組織の三次元解析（<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">論文</a>）を中心に研究をすすめています。
+様々な脳組織の三次元解析（<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">論文</a>）とそのAIへの実装（<a href="https://doi.org/10.1038/s41598-025-10912-3">論文</a>）を中心に研究をすすめています。
 <OL>
-<LI>Ryuta Mizutani, Rino Saiga, Yoshiro Yamamoto, Masayuki Uesugi, Akihisa Takeuchi, Kentaro Uesugi, Yasuko Terada, Yoshio Suzuki, Vincent De Andrade, Francesco De Carlo, Susumu Takekoshi, Chie Inomoto, Naoya Nakamura, Youta Torii, Itaru Kushima, Shuji Iritani, Norio Ozaki, Kenichi Oshima, Masanari Itokawa, and Makoto Arai (2021). Structural diverseness of neurons between brain areas and between cases. <I>Transl. Psychiatry</I> <B>11</B>, 49. 
+<LI>Rino Saiga et al. (2025). Structural differences between human and mouse neurons and their implementation in generative AIs. <I>Sci. Rep.</I> <B>15</B>, 25091.
+ <a href="https://doi.org/10.1038/s41598-025-10912-3">DOI</a>
+ <A href="https://arxiv.org/abs/2410.20735">arXiv</A>
+
+<LI>Ryuta Mizutani et al. (2021). Structural diverseness of neurons between brain areas and between cases. <I>Transl. Psychiatry</I> <B>11</B>, 49. 
  <a href="https://doi.org/10.1038/s41398-020-01173-x">DOI</a>
  <a href="https://www.nature.com/articles/s41398-020-01173-x.pdf">pdf</a>
-
-<LI>Rino Saiga, Masato Hoshino, Akihisa Takeuchi, Kentaro Uesugi, Katsuko Naitou, Akemi Kamijo, Noboru Kawabe, Masato Ohtsuka, Shunya Takizawa, and Ryuta Mizutani (2019). Synchrotron radiation microtomography of brain hemisphere and spinal cord of a mouse model of multiple sclerosis revealed a correlation between capillary dilation and clinical score. <I>J. Comp. Neurol.</I> <B>527(13)</B>, 2091-2100. [invited]
- <a href="https://dx.doi.org/10.1002/cne.24544">DOI</a>
- <A href="https://arxiv.org/abs/1810.01019">arXiv</A>
- <a href="https://www.ncbi.nlm.nih.gov/pubmed/30291810">PubMed</A>
 
 <LI>糸川 昌成 ほか (2019). 放射光ナノトモグラフィ法を用いた統合失調症における神経細胞の構造変化の解析 - 脳組織の幾何学.
 <I>精神神経学雑誌</I> <B>121(12)</B>, 926-940.
@@ -120,6 +125,10 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
   <DIV class=cv_subitem>
     SPring-8およびAdvanced Photon Source (APS)で測定したトモグラフィデータの再構成計算と画像解析のためのソフトウェア。実時間(on the fly)でのデータ処理を実現するために、トモグラフィ再構成計算で並列計算プログラミングモデルCUDA Cを用い、また、x86/x64アセンブリコードの中ではAVX-512までのSIMD命令を使用しています。
   </DIV></P>
+<P><A href="https://github.com/mizutanilab/biomimetic-nn">実際の脳を模倣したAI</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
+  <DIV class=cv_subitem>
+    脳組織の三次元解析から明らかになった知見を、AIで用いられるニューラルネットワークに応用しました。マウス等を模倣した畳み込み層を用いることで、従来のネットワークを上回る性能が得られます。また、学習の計算方法やネットワークの構造を変えることなく、重み係数を半分以下に削減できます。 <A href="https://github.com/mizutanilab/biomimetic-nn">github repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> <a href="https://doi.org/10.1038/s41598-025-10912-3">原著論文</a><IMG width=9 height=9 alt=jump src="link.png" align=top>
+  </DIV></P>
 <P><A href="https://www.nature.com/protocolexchange/protocols/6905">組織試料の準備・取り扱いプロトコル</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
   <DIV class=cv_subitem>
     生体組織を放射光を用いて解析するための方法とコツ<BR> 
@@ -128,10 +137,6 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
 <P><A href="patterns.htm">三次元テストパターン</A><BR>
   <DIV class=cv_subitem>
     マイクロトモグラフィ法・ナノトモグラフィ法の分解能見積もりのための三次元テストパターン 
-  </DIV></P>
-<P><A href="https://github.com/mizutanilab/schizo-nn">統合失調症を模したニューラルネットワーク</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
-  <DIV class=cv_subitem>
-    統合失調症の脳組織の研究から明らかになった知見を、AIで用いられるニューラルネットワークに応用しました。この「統合失調層」を用いれば、従来のネットワークを上回る性能が得られます。また、学習の計算方法やネットワークの構造を変えることなく、重み係数の６割以上を削減できます。<a href="http://journal.frontiersin.org/article/10.3389/fnbot.2022.851471/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Neurorobotics&id=851471">原著論文</a> 
   </DIV></P>
 </DIV>
 
@@ -154,6 +159,7 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
     東京大学薬学部助手(1995-2006)<BR> 
     東海大学工学部准教授(2006-2012)<BR> 
     同教授(2012-)<BR> 
+    理化学研究所 播磨研究所 客員研究員(2023-)<BR>
   </DIV></P>
 <P>所属学会：<BR>
   <DIV class=cv_subitem>
@@ -186,6 +192,7 @@ https://mizutanilab.github.io/<BR>
 <A href="db.htm">3D動画・構造モデル</A> - 
 <A href="patterns.htm">テストパターン</A><BR><BR>
 <A href="https://github.com/mizutanilab/">GitHub repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> - 
+<A href="https://github.com/mizutanilab/biomimetic-nn">生物模倣AI</A> - 
 <A href="https://github.com/mizutanilab/RecView">RecView</A> - 
 <A href="https://github.com/mizutanilab/MCTrace">MCTrace</A> - 
 <A href="https://github.com/mizutanilab/BluetoothDials">Bluetooth dialbox</A>
