@@ -52,9 +52,8 @@
 
 <DIV class=interest_item>
 
-<P><IMG width=150 height=150 alt=HumanNeurons src="schizo02.png" align=left>
-統合失調症では、精神症状から神経回路の変化が示唆されます。しかし、その原因は明らかになっていません。私たちは、SPring-8および米アルゴンヌ国立研究所Advanced Photon Sourceにおいて、統合失調症例の脳組織の構造をナノトモグラフィ（ナノCT）法で解析しました。これら施設では、放射光と呼ばれる高輝度のX線を用いることで、ナノメータースケールでの三次元解析が可能となっています。得られた脳組織の三次元像から、神経細胞のネットワーク構造をトレースし、その構造モデルを構築しました。構造モデルはデカルト座標系で記述されており、神経突起の曲率や捩率（torsion）などの幾何学的パラメータが計算できます。
-すると、健康なかたでは神経突起の曲がり方（曲率）が加齢に比例して変化することが分かりました。統合失調症では、この比例関係から逸脱し、幻聴スコアが神経突起の曲率と強く相関していました。このような神経細胞の変化をターゲットとした薬を開発できれば、統合失調症の新たな治療法につながると期待されます(<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">原著論文</a>)。
+<P><IMG width=160 height=142 alt=PsychResfig2a src="PsychResfig2a251115.png" align=left>
+統合失調症では、精神症状から神経回路の変化が示唆されます。しかし、その原因は明らかになっていません。私たちは、SPring-8および米アルゴンヌ国立研究所Advanced Photon Sourceにおいて、統合失調症例の脳組織の構造をナノトモグラフィ（ナノCT）法で解析しました。これら施設では、放射光と呼ばれる高輝度のX線を用いることで、ナノメータースケールでの三次元解析が可能となっています。得られた脳組織の三次元像から、神経細胞のネットワーク構造をトレースし、神経突起の曲率や捩率（torsion）などの幾何学的パラメータを求めました。すると健康な方では、神経突起の曲がり方（曲率）が加齢に比例して変化することが分かりました。一方で統合失調症の方は、この比例関係から逸脱し、幻聴スコアが神経突起の曲率と強く相関していました。また、神経突起の曲率と細胞体の長さで、統合失調症かどうかを判別できました（図）。このような神経細胞の変化をターゲットとした薬を開発できれば、統合失調症の新たな治療法につながると期待されます(<a href="https://doi.org/10.1016/j.psychres.2025.116822">原著論文１</a>, <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">論文２</a>)。
 この研究は日米でニュースリリースされ、国内外で報道されています：
 <a href="https://www.anl.gov/article/seeing-schizophrenia-xrays-shed-light-on-neural-differences-point-toward-treatment">米アルゴンヌ国立研究所</a> - 
 <a href="https://www.aps.anl.gov/APS-Science-Highlight/2021-01-18/uncovering-new-insights-about-the-brains-of-individuals-with">APS highlights</a> - 
@@ -96,13 +95,13 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
 <H3><A name=publications></A>論文発表</H3>
 様々な脳組織の三次元解析（<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0287646">論文</a>）とそのAIへの実装（<a href="https://doi.org/10.1038/s41598-025-10912-3">論文</a>）を中心に研究をすすめています。
 <OL>
+<LI>Rino Saiga et al. (2025). Pyramidal soma size in the anterior cingulate cortex is small in schizophrenia and correlates with hallucination score. <I>Psychiatry Res.</I><B></B>, in press. 
+ <a href="https://doi.org/10.1016/j.psychres.2025.116822">DOI</a>
+ <A href="https://www.psypost.org/schizophrenia-linked-to-distinctively-different-neuron-size-and-shape/">PsyPost news</A>
+
 <LI>Rino Saiga et al. (2025). Structural differences between human and mouse neurons and their implementation in generative AIs. <I>Sci. Rep.</I> <B>15</B>, 25091.
  <a href="https://doi.org/10.1038/s41598-025-10912-3">DOI</a>
  <A href="https://arxiv.org/abs/2410.20735">arXiv</A>
-
-<LI>Ryuta Mizutani et al. (2021). Structural diverseness of neurons between brain areas and between cases. <I>Transl. Psychiatry</I> <B>11</B>, 49. 
- <a href="https://doi.org/10.1038/s41398-020-01173-x">DOI</a>
- <a href="https://www.nature.com/articles/s41398-020-01173-x.pdf">pdf</a>
 
 <LI>糸川 昌成 ほか (2019). 放射光ナノトモグラフィ法を用いた統合失調症における神経細胞の構造変化の解析 - 脳組織の幾何学.
 <I>精神神経学雑誌</I> <B>121(12)</B>, 926-940.
@@ -129,7 +128,7 @@ YouTube：<a href="https://youtu.be/hqovtNZP7Gs">3D画像</A> - <a href="https:/
   <DIV class=cv_subitem>
     脳組織の三次元解析から明らかになった知見を、AIで用いられるニューラルネットワークに応用しました。マウス等を模倣した畳み込み層を用いることで、従来のネットワークを上回る性能が得られます。また、学習の計算方法やネットワークの構造を変えることなく、重み係数を半分以下に削減できます。 <A href="https://github.com/mizutanilab/biomimetic-nn">github repo</A><IMG width=9 height=9 alt=jump src="link.png" align=top> <a href="https://doi.org/10.1038/s41598-025-10912-3">原著論文</a><IMG width=9 height=9 alt=jump src="link.png" align=top>
   </DIV></P>
-<P><A href="https://www.nature.com/protocolexchange/protocols/6905">組織試料の準備・取り扱いプロトコル</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
+<P><A href="https://www.protocols.io/view/preparation-of-soft-tissue-samples-for-synchrotron-bp2l6d6qdvqe/v1">組織試料の準備・取り扱いプロトコル</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
   <DIV class=cv_subitem>
     生体組織を放射光を用いて解析するための方法とコツ<BR> 
     <A href="https://youtu.be/HQn4nLG_YT0">キャピラリマウント手技 (YouTube).</A><IMG width=9 height=9 alt=jump src="link.png" align=top><BR>
